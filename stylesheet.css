@@ -5,11 +5,73 @@ body{
     margin: 0; /*Ingen hvite kanter rundt eventuelle bokser*/
 }
 
+
 .container{
     width: 80%;
     overflow: hidden; /*Fjerner unødvendige hvite kanter*/
+    margin: auto; /*Legger innhold 20% unna kant*/
+    overflow: hidden;
 }
 
+
+/*Ulike linker generelt på nettsiden*/
+a{
+    color: white;
+    text-decoration: underline; /*Understrek*/
+    padding-right: 15px;
+}
+a:hover{
+    color: lightskyblue;
+    text-decoration: none; /*Ikke understrek*/
+}
+
+
+/*Head*/
 #main-header{
-    background-color: lightskyblue;
+    background-color: lightgray;
+}
+
+
+/*Navigation bar*/
+#navbar{
+    background-color: #333; /*Usikker på hva fargen er på "engelsk"*/
+}
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+#navbar li{
+    display: inline; /*Legger bullet- pointsa horisontalt*/
+}
+
+
+/*Generell info på siden*/
+.footer-block{
+    float: left;
+}
+
+
+/*Footer*/
+#main-footer, .footer-block{
+    background-color: #333; /*Usikker på hva fargen er på "engelsk"*/
+}
+#footer-box-1, #footer-box-2, #footer-box-3 h3{
+    color: white;
+}
+#footer-box-1, #footer-box-2, #footer-box-3  ul{
+    color: white;
+    padding: 0;
+    /*list-style: none;*/
+}
+#footer-box-1, #footer-box-2, #footer-box-3 a:active{
+    /*color: lightskyblue;*/
+    text-decoration: none; /*Ikke understrek*/
+}
+
+.footer-block{
+    background-color: #333; /*Usikker på hva fargen er på "engelsk"*/
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    box-sizing: border-box;
 }
