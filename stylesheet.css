@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.6em;
+    margin: 0; /*Ingen hvite kanter rundt eventuelle bokser*/
+}
+
+.container{
+    width: 80%;
+    overflow: hidden; /*Fjerner unødvendige hvite kanter*/
+}
+
+#main-header{
+    background-color: lightskyblue;
+}
