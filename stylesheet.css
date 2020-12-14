@@ -52,26 +52,51 @@ a:hover{
 
 
 /*Footer*/
-#main-footer, .footer-block{
+.footer-box-1, #main-footer{
     background-color: #333; /*Usikker på hva fargen er på "engelsk"*/
-}
-#footer-box-1, #footer-box-2, #footer-box-3 h3{
     color: white;
 }
-#footer-box-1, #footer-box-2, #footer-box-3  ul{
-    color: white;
+#footer-box-1 ul{
     padding: 0;
     /*list-style: none;*/
 }
-#footer-box-1, #footer-box-2, #footer-box-3 a:active{
+#footer-box-1 a:active{
     /*color: lightskyblue;*/
     text-decoration: none; /*Ikke understrek*/
 }
-
-.footer-block{
-    background-color: #333; /*Usikker på hva fargen er på "engelsk"*/
+.footer-box-1{
     float: left;
     width: 33.3%;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
+}
+
+
+.footer{
+    background-color: #333; /*Usikker på hva fargen er på "engelsk"*/
+    color: white;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px;
+    text-align: center;
+}
+.footer-left, .footer-middle, .footer-right{
+    float: left;
+    text-align: center;
+}
+.footer-left{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.footer-middle{
+    padding-left: 110px;
+    padding-right: 50px;
+}
+.footer-right{
+    padding-right: 60px;
+    padding-left: 60px;
 }
