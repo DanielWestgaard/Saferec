@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.6em;
+    margin: 0; /*Ingen hvite kanter rundt eventuelle bokser*/
+}
+
+
+.container{
+    width: 90%;
+    overflow: hidden; /*Fjerner unødvendige hvite kanter*/
+    margin: auto; /*Legger innhold 20% unna kant*/
+    /*overflow: hidden;*/
+}
+.container h1{
+    margin-bottom: 0;
+}
+.container p{
+    margin-top: 5px;
+}
+
+
+/*Ulike linker generelt på nettsiden*/
+a{
+    color: white;
+    text-decoration: underline; /*Understrek*/
+    padding-right: 15px;
+}
+a:hover{
+    color: lightskyblue;
+    text-decoration: none; /*Ikke understrek*/
+}
+
+
+/*Head*/
+#main-header{
+    background-color: lightgray;
+}
+#saferec-logo{
+    padding-top: 15px;
+    width: 300px;
+}
+#main-header p{
+    margin-top: 0;
+}
+
+
+/*Navigation bar*/
+#navbar{
+    background-color: #333; /*Usikker på hva fargen er på "engelsk"*/
+}
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+#navbar li{
+    display: inline; /*Legger bullet- pointsa horisontalt*/
+}
