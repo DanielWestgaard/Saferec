@@ -7,10 +7,16 @@ body{
 
 
 .container{
-    width: 80%;
+    width: 90%;
     overflow: hidden; /*Fjerner unødvendige hvite kanter*/
     margin: auto; /*Legger innhold 20% unna kant*/
-    overflow: hidden;
+    /*overflow: hidden;*/
+}
+.container h1{
+    margin-bottom: 0;
+}
+.container p{
+    margin-top: 5px;
 }
 
 
@@ -30,6 +36,13 @@ a:hover{
 #main-header{
     background-color: lightgray;
 }
+#saferec-logo{
+    padding-top: 15px;
+    width: 300px;
+}
+#main-header p{
+    margin-top: 0;
+}
 
 
 /*Navigation bar*/
@@ -45,34 +58,47 @@ a:hover{
 }
 
 
-/*Generell info på siden*/
-.footer-block{
+/**/
+.block{
+}
+
+
+/*Sammarbeidspartnere*/
+.gallery {
+    margin: 5px 10px 5px 5px;
+    /*    border: 1px solid lightgray;*/
     float: left;
+    width: 180px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 800px){ /*Vet ikke hva denne gjør*/
+    .gallery {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px){ /*Vet ikke hva denne gjør*/
+    .gallery {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.gallery:hover {
+    border: 1px solid black;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+.desc {
+    padding: 5px;
+    text-align: center;
 }
 
 
 /*Footer*/
-.footer-box-1, #main-footer{
-    background-color: #333; /*Usikker på hva fargen er på "engelsk"*/
-    color: white;
-}
-#footer-box-1 ul{
-    padding: 0;
-    /*list-style: none;*/
-}
-#footer-box-1 a:active{
-    /*color: lightskyblue;*/
-    text-decoration: none; /*Ikke understrek*/
-}
-.footer-box-1{
-    float: left;
-    width: 33.3%;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-
-.footer{
+#main-footer{
     background-color: #333; /*Usikker på hva fargen er på "engelsk"*/
     color: white;
     display: -webkit-flex;
@@ -82,11 +108,8 @@ a:hover{
     display: flex;
     flex-flow: row wrap;
     padding: 30px;
-    text-align: center;
-}
-.footer-left, .footer-middle, .footer-right{
-    float: left;
     text-align: left;
+}
+.tekst-boks{
     padding: 10px;
-    padding-right: 110px;
 }
