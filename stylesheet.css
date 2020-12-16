@@ -65,8 +65,8 @@ a:hover{
 
 /*Sammarbeidspartnere*/
 .gallery {
-    margin: 5px 10px 5px 5px;
-    border: 1px solid #333;
+    /*margin: 5px 10px 5px 5px;
+    /*border: 1px solid lightgray;*/
     float: left;
 
     /*width: 180px; Sikter til ulike størrelser i HTML, slik at */
@@ -129,5 +129,8 @@ a:hover{
     text-align: left;
 }
 .tekst-boks{
-    padding: 10px;
+    padding-left: 100px;
+}
+#kontakt:hover{
+    border: 1px solid blue;
 }
