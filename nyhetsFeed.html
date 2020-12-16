@@ -1,51 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<link rel="stylesheet" href="stylesheetNews.css"> <!--Link til stylesheet-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Slik
-at nettsiden er responsiv til alle typer skjermer (Mac, PC, tablet, telfon osv.-->
 <head>
-    <meta charset="UTF-8">
-    <title>Newsfeed</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
 </head>
 <body>
 
-<!--Top box-->
-    <header id="main-header">
-        <div class="container">
-            <a href="index.html#main-header"><img src="https://sw61364.sfstatic.io/upload_dir/pics/Saferec-Logo.jpg"
-                                        alt="Saferec logo" id="saferec-logo"></a>
-            <p>Hei og velkommen til Saferec</p>
-        </div>
-    </header>
-
-
-<!--Navigation bar-->
-    <nav id="navbar">
-        <div class="container">
-            <ul>
-                <!--For å endre slik at de skal fungere riktig, bytt ut # og link til html- fila-->
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="#">Om oss</a></li>
-                <li><a href="#">Tjenester</a></li>
-                <li><a href="index.html#kontakt">Kontakt oss</a></li>
-                <li><a href="nyhetsFeed.html">Nyhetsfeed</a></li> <!--Tar deg til egen side-->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="kultest.html">Saferec</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="kultest.html">
+                <!--Home-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+                            <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kultest.html#om-oss">
+                <!--Om oss-->
+                        Om oss
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kultest.html#tjenester">
+                <!--Tjenester-->
+                        Tjenester
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kultest.html#kontakt">
+                <!--Kontakt oss-->
+                        Kontakt oss
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nyhetsFeed.html">
+                <!--Nyhetsfeed-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                            <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
             </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
-    </nav>
+    </div>
+</nav>
 
-<!--Navigation bar 2-->
+<div class="container-fluid">
+<!-- Info om siden -->
+    <h1>Dette er vår nyhetsside</h1>
+    <p class="fs-4">Dette er en Facebook feed! Her kan du enkelt se innleggene som blir lagt ut på
+        Facebook- siden vår, <a href="https://www.facebook.com/pages/Saferec%20As/326284534092868/" target="_">
+        Saferec AS</a>, uten å forlate nettsiden.
+    </p>
 
-
-
-<!--Oppdateringer som blir lagt ut på Facebook- sida dems-->
+<!-- Faceook feed -->
     <div id="facebook-feed">
-        <p>test</p>
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v9.0" nonce="76yRabYF"></script>
 
         <div class="fb-page" data-href="https://www.facebook.com/pages/Saferec%20As/326284534092868/" data-tabs="timeline" data-width="600" data-height="315" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
     </div>
 
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+-->
 </body>
 </html>
