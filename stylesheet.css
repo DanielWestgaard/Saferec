@@ -129,8 +129,5 @@ a:hover{
     text-align: left;
 }
 .tekst-boks{
-    padding-left: 100px;
-}
-#kontakt:hover{
-    border: 1px solid blue;
+    padding-right: 50px;
 }
