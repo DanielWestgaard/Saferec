@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="egetstylesheet.css"> <!--Link til mitt eget stylesheet-->
+
+
 
     <title>Saferec</title>
 </head>
@@ -87,17 +90,56 @@
 
 <div class="container-fluid">
 
-<!--Om oss-->
-    <h1 id="om-oss">Om oss</h1>
-    <p class="fs-4">sdf</p>
+<!--Kort om oss-->
+    <h1 id="om-oss">Kort om oss</h1>
+    <div style="width: 95%"><img src="https://g.acdn.no/obscura/API/dynamic/r1/escenic/tr_1080_732_l_f/0000/archive/02378/No_name_2378226a.jpg?chk=09529C"
+         class="rounded float-end" alt="Portrett av Jan Martinsen" style="width: 300px"></div>
+    <p class="fs-4" style="width: 70%">
+        Saferec AS ble stiftet i 1982 av Jan Olav Martinsen, som også er daglig leder.
+        Firmaet består, foreløpig, 10 ansatte med god faglig kunnskap og lidenskap for arbeidet sitt.
+    </p>
 
 <!--Tjenester-->
-    <h1 id="tjenester">Tjenester</h1>
-    <p class="fs-4">sdf</p>
+    <h1 id="tjenester" class="float-none">Tjenester</h1>
+    <p class="fs-4">Produksjon av karosserier og tilhengere</p>
+
+<!--"Karusell" med udlike bilder-->
+    <div id="carouselExampleIndicators" class="carousel slide mx-auto d-block" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+        <!--Første bilde-->
+                <img src="https://scontent.fosl3-2.fna.fbcdn.net/v/t1.0-9/10450758_10203613120802496_9116563453033989393_n.jpg?_nc_cat=109&ccb=2&_nc_sid=ba80b0&_nc_ohc=xlv-2H01Kr0AX-84FHW&_nc_ht=scontent.fosl3-2.fna&oh=c8f4aa01c5431107b924a76214bcf2f4&oe=6002669E"
+                     class="d-block w-100" alt="Bilde av bergningsbiler">
+            </div>
+            <div class="carousel-item">
+        <!--Andre bilde-->
+                <img src="https://scontent.fosl3-1.fna.fbcdn.net/v/t1.0-9/97723453_3012855518809430_5210834896817225728_n.jpg?_nc_cat=107&ccb=2&_nc_sid=8bfeb9&_nc_ohc=NPOjuWYtTHkAX_scLH3&_nc_ht=scontent.fosl3-1.fna&oh=caad23b3b196d23bb760f0072cc4d04c&oe=5FFF6966"
+                     class="d-block w-100" alt="Bilde av bergningsbil">
+            </div>
+            <div class="carousel-item">
+        <!--Tredje bilde-->
+                <img src="https://scontent.fosl3-2.fna.fbcdn.net/v/t1.0-9/38471771_2015172945180911_5790422161973837824_o.jpg?_nc_cat=101&ccb=2&_nc_sid=cdbe9c&_nc_ohc=_aUSFnABuxIAX_cT0i9&_nc_ht=scontent.fosl3-2.fna&oh=470f6edf831d077a695a50a12a1cdc4c&oe=60024E1B"
+                     class="d-block w-100" alt="Bilde av winch på bil">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
 
 <!--Sammarbeidspartnere-->
     <h1>Sammarbeidspartnere</h1>
-    <p>sdf</p>
+    <p class="fs-4">sdf</p>
     <!--Miller Industries-->
     <a href="https://www.millerind.com/" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Miller_Industries_logo.jpg/220px-Miller_Industries_logo.jpg"
@@ -125,7 +167,7 @@
     <!--Savatech-->
     <a href="https://www.savatech.com/" target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSO8inPeIaghrvIUlY1xmbL6ITtJpIszvxw&usqp=CAU"
-         alt="Savatech" style="width:315px;" class="img-thumbnail rounded float-start">
+         alt="Savatech" style="width:313px;" class="img-thumbnail rounded float-start">
         <div class="desc">
             <!--Savatech-->
         </div>
@@ -133,27 +175,29 @@
     <!--Bezares-->
     <a href="https://bezares.com/en-us/" target="_blank">
         <img src="https://bezares.com/wp-content/uploads/2017/11/cropped-logo_Bezares_RGB_512px.png"
-         alt="Bezares" style="width:168px;" class="img-thumbnail rounded float-start">
+         alt="Bezares" style="width:170px;" class="img-thumbnail rounded float-start">
         <div class="desc">
             <!--Bezares-->
-        </div>
-    </a>
-    <!--Tischer Fahrzeugbau GMBH-->
-    <a href="http://www.tischer-fahrzeugbau.de/" target="_blank">
-        <img src="http://www.tischer-fahrzeugbau.de/files/ti/img/logos/logo.jpg"
-         alt="Tischer Fahrzeugbau gmbh" style="width:500px;" class="img-thumbnail rounded float-start">
-        <div class="desc">
-            <!--Tischer Fahrzeugbau GMBH-->
         </div>
     </a>
     <!--DP Winch-->
     <a href="https://winchesinc.com/catalog/brands/cat/5/dp-winch" target="_blank">
         <img src="https://winchesinc.com/catalog/media/brands/dp-winch.jpg?1390334526"
-             alt="DP Winch" style="width:294px;">
+             alt="DP Winch" style="width:290px;" class="img-thumbnail rounded  float-start">
         <div class="desc">
             <!--DP Winch-->
         </div>
     </a>
+    <!--Tischer Fahrzeugbau GMBH-->
+    <a href="http://www.tischer-fahrzeugbau.de/" target="_blank">
+        <img src="http://www.tischer-fahrzeugbau.de/files/ti/img/logos/logo.jpg"
+             alt="Tischer Fahrzeugbau gmbh" style="width:500px;" class="img-thumbnail rounded">
+        <div class="desc">
+            <!--Tischer Fahrzeugbau GMBH-->
+        </div>
+    </a>
+
+    <div style="margin-top: 100px"></div> <!--Litt plass mellom bildene og footer-->
 
 </div>
 
