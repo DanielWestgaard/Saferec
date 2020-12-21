@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="nyhetsFeedStylesheet.css"> <!--Link til mitt eget stylesheet-->
 
     <title>Hello, world!</title>
 </head>
@@ -90,17 +91,27 @@
         Saferec AS</a>, uten å forlate nettsiden.
     </p>
 
-<!-- Faceook feed -->
-    <div id="facebook-feed">
+<!-- Faceook feed  https://developers.facebook.com/docs/plugins/page-plugin/-->
+    <div class="facebookPage">
+        <!--    <div id="facebook-feed">
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v9.0" nonce="76yRabYF"></script>
+
+                <div class="fb-page" data-href="https://www.facebook.com/pages/Saferec%20As/326284534092868/" data-tabs="timeline" data-width="600" data-height="315" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+            </div>
+
+        </div>-->
+        <!-- Eksempel side (facebook sin side) -->
         <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v9.0" nonce="76yRabYF"></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v9.0" nonce="2LfHm9Up"></script>
 
-        <div class="fb-page" data-href="https://www.facebook.com/pages/Saferec%20As/326284534092868/" data-tabs="timeline" data-width="600" data-height="315" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="700" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
     </div>
-
 </div>
 
-<!-- Optional JavaScript; choose one of the two! -->
+<div style="margin-top: 200px"></div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
