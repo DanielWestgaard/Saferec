@@ -12,8 +12,11 @@ body, html {
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/911-turbo-19-1583172084.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://raw.githubusercontent.com/DanielWestgaard/Saferec/master/beskjært%20.jpg");
+    /*https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/911-turbo-19-1583172084.jpg
 
+     */
     /* Set a specific height */
     height: 50%;
 
