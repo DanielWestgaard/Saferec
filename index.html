@@ -10,8 +10,6 @@
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="egetStylesheet.css"> <!--Link til mitt eget stylesheet-->
 
-
-
     <title>Saferec</title>
 </head>
 
@@ -39,9 +37,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="merOmOss.html">
-                    <!--Mer om oss-->
-                            Mer om oss
+                        <a class="nav-link" href="#om-oss">
+                    <!--Kort om oss-->
+                            Kort om oss
                         </a>
                     </li>
                     <li class="nav-item">
@@ -59,6 +57,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="omAnsatte.html">
+                    <!--Ansatte-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="nyhetsFeed.html">
                     <!--Nyhetsfeed-->
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -67,7 +74,7 @@
                         </a>
                     </li>
                     <!--Dropdown-->
-                    <li class="nav-item dropdown">
+            <!--        <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown
@@ -80,12 +87,13 @@
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
-                <form class="d-flex">
+                <!--Search-->
+            <!--    <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -115,7 +123,6 @@
                             City. Planbiler og tungbergere bygges i Gjerdrum på vårt verksted hvor vi også
                             bygger skap i rustfritt. Vi holder også til i eget bygg! 
                         </p>
-                        <p class="fs-5" style="width: 70%">Du kan lese mer om oss <a href="merOmOss.html">her</a>!</p>
                     <img src="https://g.acdn.no/obscura/API/dynamic/r1/escenic/tr_1080_732_l_f/0000/archive/02378/No_name_2378226a.jpg?chk=09529C"
                          class="rounded mx-auto d-block" alt="Portrett av Jan Martinsen" style="width: 300px">
                 </div>
@@ -124,7 +131,11 @@
         <!--Tjenester-->
                 <div class="p-3 border bg-light">
                     <h1 id="tjenester" class="float-none">Tjenester</h1>
-                    <p class="fs-5">Produksjon av karosserier og tilhengere</p>
+                    <p class="fs-5">
+                        Saferec tar på seg blant annet service og litt tunge hydraul- problemer. Vi bygger og fikser
+                        bergningsbiler, i tillegg til at vi også er godkjent sakkyndig på kraner, bergingsbiler,
+                        vinsjer og løfteutstyr.
+                    </p>
             <!--"Karusell" med ulike bilder-->
                     <div id="carouselExampleIndicators" class="carousel slide mx-auto d-block" data-bs-ride="carousel"
                          id="carousel-size">
